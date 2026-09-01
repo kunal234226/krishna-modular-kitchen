@@ -1,0 +1,51 @@
+{% extends "index.html" %}
+
+{% block title %}
+    Login Page
+{% endblock %}
+
+{% block content %}
+
+<div class="login-container">
+
+    <div class="login-box">
+
+        <h1>Login</h1>
+
+        <hr>
+
+        <form action="" method="post">
+
+            <div class="form-group">
+                <label>Username:</label>
+                <input type="text" name="username" placeholder="Username" required>
+            </div>
+
+            <div class="form-group">
+                <label>Password:</label>
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+
+            <button type="submit">Login</button>
+
+
+            {% if name_exist %}
+                <script>
+                    invalid()
+                </script>
+            {% endif %}
+
+        </form>
+
+        <a href="/changepass">
+                <button type="submit">Change Password</button>
+            </a>
+
+        <a href="/" id="home">
+            <button type="submit"> Back to home </button>
+        </a>
+        
+    </div>
+</div>
+
+{% endblock %}
