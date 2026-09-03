@@ -20,7 +20,7 @@ db = mysql.connector.connect(
 app = Flask(__name__)
 
 # Secret key from .env
-app.secret_key = os.getenv("krishna-modular-kitchen-secret-2026")
+app.secret_key = os.getenv("SECRET_KEY")
 
 
 # Home Page
