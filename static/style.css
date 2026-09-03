@@ -59,7 +59,7 @@ body {
 
 
 .login-box hr,
-.register-box hr
+.register-box hr,
 .change-box hr {
     margin-bottom: 25px;
 }
@@ -1154,4 +1154,545 @@ footer h3 {
     color: white;
     font-size: 18px;
     font-weight: bold;
+}
+
+
+
+/* =====================================================
+   MOBILE RESPONSIVE FIX
+   ===================================================== */
+
+@media (max-width: 600px) {
+
+    /* =========================
+       TOP CONTACT BAR
+    ========================= */
+
+    .contactbar {
+        height: auto;
+        width: 100%;
+        padding: 8px 10px;
+        box-sizing: border-box;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        gap: 8px;
+
+        overflow: hidden;
+    }
+
+    .contactbar .lang {
+        width: 90px;
+        height: 36px;
+        flex-shrink: 0;
+    }
+
+    .contactbar .lang i {
+        height: 36px;
+    }
+
+    .contactbar .text {
+        height: 36px;
+        font-size: 13px;
+    }
+
+    .contactbar .email,
+    .contactbar .office,
+    .contactbar .time {
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+        font-size: 13px;
+
+        padding: 3px 0;
+        box-sizing: border-box;
+    }
+
+    .contactbar .email i,
+    .contactbar .office i,
+    .contactbar .time i {
+        width: 25px;
+        height: 25px;
+        margin-top: 0;
+        flex-shrink: 0;
+    }
+
+    .contactbar .email p,
+    .contactbar .office p,
+    .contactbar .time p {
+        margin: 0;
+        overflow-wrap: anywhere;
+    }
+
+
+    /* SOCIAL ICONS */
+
+    .contactbar .logo {
+        width: auto;
+        height: 40px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 15px;
+        font-size: 25px;
+    }
+
+
+    /* USER PROFILE */
+
+    .user-profile {
+        width: 100%;
+        justify-content: center;
+        font-size: 15px;
+    }
+
+
+    /* =========================
+       MAIN NAVBAR
+    ========================= */
+
+    .navbar {
+        width: 100%;
+        height: auto;
+
+        padding: 15px 10px;
+
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 15px;
+
+        overflow: hidden;
+    }
+
+
+    /* LOGO */
+
+    .navlogo {
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navlogo img {
+        width: 220px;
+        height: auto;
+        max-width: 85vw;
+
+        display: block;
+    }
+
+
+    /* =========================
+       NAV BUTTONS
+    ========================= */
+
+    .nav-button {
+        width: 100%;
+        height: auto;
+
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 8px;
+
+        flex-wrap: wrap;
+    }
+
+    .nav-button a {
+        width: auto !important;
+        height: auto !important;
+        margin: 0 !important;
+    }
+
+    .nav-button button {
+        width: auto !important;
+
+        min-width: 85px;
+
+        height: auto;
+
+        padding: 10px 15px;
+
+        margin: 0;
+
+        font-size: 16px;
+        line-height: 1.2;
+    }
+
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .home-main-hero {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-main-content {
+        width: 100%;
+        padding: 45px 22px;
+        box-sizing: border-box;
+    }
+
+    .home-main-content h1 {
+        font-size: 36px;
+        line-height: 1.1;
+        margin: 20px 0;
+    }
+
+    .home-main-content p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+
+    /* HERO BUTTONS */
+
+    .home-buttons {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 12px;
+
+        margin-top: 25px;
+    }
+
+    .home-primary-btn,
+    .home-secondary-btn {
+        width: 100%;
+
+        box-sizing: border-box;
+
+        text-align: center;
+
+        padding: 13px 20px;
+    }
+
+
+    /* HERO IMAGE */
+
+    .home-main-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .home-main-image img {
+        width: 100%;
+        height: auto;
+
+        display: block;
+
+        object-fit: cover;
+    }
+
+
+    /* =========================
+       INTRO
+    ========================= */
+
+    .home-intro {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 30px;
+
+        padding: 55px 22px;
+
+        box-sizing: border-box;
+    }
+
+    .home-intro-text,
+    .home-intro-image {
+        width: 100%;
+    }
+
+    .home-intro-image img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* =========================
+       SERVICES
+    ========================= */
+
+    .home-service-section {
+        padding: 55px 20px;
+        box-sizing: border-box;
+    }
+
+    .home-service-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .home-service-card {
+        padding: 25px;
+    }
+
+
+    /* =========================
+       DESIGNS
+    ========================= */
+
+    .home-design-section {
+        padding: 55px 20px;
+        box-sizing: border-box;
+    }
+
+    .home-design-heading {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .home-design-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+
+        gap: 12px;
+    }
+
+    .home-design-grid div {
+        height: 250px;
+    }
+
+    .design-large {
+        grid-row: auto;
+    }
+
+
+    /* =========================
+       FINAL CTA
+    ========================= */
+
+    .home-final,
+    .about-final {
+        padding: 50px 22px;
+
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 25px;
+
+        box-sizing: border-box;
+    }
+
+    .home-final h2,
+    .about-final h2 {
+        text-align: center;
+        font-size: 28px;
+    }
+
+
+    /* =========================
+       ABOUT PAGE
+    ========================= */
+
+    .about-main {
+        flex-direction: column;
+    }
+
+    .about-main-image,
+    .about-main-content {
+        width: 100%;
+    }
+
+    .about-main-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .about-main-content {
+        padding: 50px 22px;
+    }
+
+
+    /* =========================
+       OWNER
+    ========================= */
+
+    .owner-section {
+        flex-direction: column;
+        gap: 35px;
+
+        padding: 55px 22px;
+        box-sizing: border-box;
+    }
+
+    .owner-image,
+    .owner-content {
+        width: 100%;
+    }
+
+    .owner-image img {
+        height: auto;
+    }
+
+
+    /* =========================
+       STORY
+    ========================= */
+
+    .story-section {
+        flex-direction: column;
+
+        gap: 35px;
+
+        padding: 55px 22px;
+
+        box-sizing: border-box;
+    }
+
+    .story-content,
+    .story-points {
+        width: 100%;
+    }
+
+
+    /* =========================
+       VISION
+    ========================= */
+
+    .vision-section {
+        padding: 55px 20px;
+    }
+
+    .vision-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .vision-card {
+        padding: 25px;
+    }
+
+
+    /* =========================
+       VALUES
+    ========================= */
+
+    .values-section {
+        padding: 55px 20px;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* =========================
+       PROCESS
+    ========================= */
+
+    .about-process-section {
+        padding: 55px 20px;
+    }
+
+    .about-process {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+        width: 100%;
+
+        grid-template-columns: 1fr;
+
+        padding: 50px 22px 20px;
+
+        gap: 35px;
+
+        box-sizing: border-box;
+    }
+
+    .copyright {
+        grid-column: auto;
+        line-height: 1.6;
+    }
+
+
+    /* =========================
+       PREVENT HORIZONTAL SCROLL
+    ========================= */
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+
+/* =====================================================
+   EXTRA SMALL PHONES
+   ===================================================== */
+
+@media (max-width: 400px) {
+
+    .navlogo img {
+        width: 190px;
+    }
+
+    .nav-button {
+        gap: 5px;
+    }
+
+    .nav-button button {
+        min-width: 78px;
+        padding: 9px 11px;
+        font-size: 14px;
+    }
+
+    .home-main-content {
+        padding: 40px 18px;
+    }
+
+    .home-main-content h1 {
+        font-size: 32px;
+    }
+
+    .contactbar {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
 }
