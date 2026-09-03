@@ -14,13 +14,13 @@ db = mysql.connector.connect(
     password=os.getenv("DB_PASSWORD"),
     database=os.getenv("DB_NAME"),
     port=int(os.getenv("DB_PORT")),
-    ssl_ca="ca.pem"
+    ssl_ca=os.path.join(os.path.dirname(__file__), "ca.pem")
 )
 
 app = Flask(__name__)
 
 # Secret key from .env
-app.secret_key = os.getenv("SECRET_KEY")
+app.secret_key = os.getenv("krishna-modular-kitchen-secret-2026")
 
 
 # Home Page
